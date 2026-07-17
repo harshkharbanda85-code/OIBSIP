@@ -1,0 +1,153 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background:linear-gradient(135deg,#667eea,#764ba2);
+    padding:20px;
+}
+
+.container{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.card{
+    width:420px;
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(15px);
+    -webkit-backdrop-filter:blur(15px);
+    border:1px solid rgba(255,255,255,0.2);
+    border-radius:20px;
+    padding:35px;
+    box-shadow:0 15px 35px rgba(0,0,0,0.25);
+    color:#fff;
+    animation:fadeIn .8s ease;
+}
+
+.icon{
+    font-size:55px;
+    text-align:center;
+    margin-bottom:10px;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:8px;
+}
+
+.subtitle{
+    text-align:center;
+    font-size:14px;
+    color:#eaeaea;
+    margin-bottom:25px;
+}
+
+.input-group{
+    margin-bottom:20px;
+}
+
+.input-group label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:600;
+}
+
+.input-group input,
+.input-group select{
+    width:100%;
+    padding:13px;
+    border:none;
+    outline:none;
+    border-radius:10px;
+    font-size:16px;
+}
+
+button{
+    width:100%;
+    padding:14px;
+    margin-top:10px;
+    border:none;
+    border-radius:10px;
+    background:#00c6ff;
+    color:#fff;
+    font-size:17px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#0095d9;
+    transform:translateY(-2px);
+}
+
+.result{
+    margin-top:30px;
+}
+
+.result h2{
+    text-align:center;
+    margin-bottom:15px;
+}
+
+.result-box{
+    background:rgba(255,255,255,0.15);
+    padding:14px;
+    margin:12px 0;
+    border-radius:10px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.result-box strong{
+    color:#ffe600;
+}
+
+#error{
+    text-align:center;
+    color:#ffb3b3;
+    margin-top:15px;
+    font-weight:bold;
+}
+
+footer{
+    text-align:center;
+    margin-top:25px;
+    font-size:14px;
+    color:#f1f1f1;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@media(max-width:480px){
+
+    .card{
+        width:100%;
+        padding:25px;
+    }
+
+    h1{
+        font-size:26px;
+    }
+
+}

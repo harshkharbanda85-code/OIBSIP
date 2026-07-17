@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter | Oasis Infobyte</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="card">
+           <div class="icon">
+                🌡️
+            </div>
+            <h1>Temperature Converter</h1>
+
+            <p class="subtitle">
+                Convert temperature instantly between Celsius, Fahrenheit and Kelvin.
+            </p>
+
+            <div class="input-group">
+
+                <label for="tempInput">Enter Temperature</label>
+                <input
+                    type="number"
+                    id="tempInput"
+                    placeholder="Enter temperature">
+            </div>
+
+            <div class="input-group">
+                <label for="unit">Select Unit</label>
+                <select id="unit">
+                    <option value="celsius">Celsius (°C)</option>
+                    <option value="fahrenheit">Fahrenheit (°F)</option>
+                    <option value="kelvin">Kelvin (K)</option>
+                </select>
+            </div>
+
+            <button onclick="convertTemperature()">
+                Convert Temperature
+            </button>
+
+            <div class="result">
+
+                <h2>Converted Values</h2>
+
+                <div class="result-box">
+                    <span>Celsius</span>
+                    <strong id="celsiusResult">-- °C</strong>
+                </div>
+
+                <div class="result-box">
+                    <span>Fahrenheit</span>
+                    <strong id="fahrenheitResult">-- °F</strong>
+                </div>
+
+                <div class="result-box">
+                    <span>Kelvin</span>
+                    <strong id="kelvinResult">-- K</strong>
+                </div>
+
+                <p id="error"></p>
+
+            </div>
+
+            <footer>
+                Developed by <strong>Harsh Kharbanda</strong>
+            </footer>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
