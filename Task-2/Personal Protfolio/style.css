@@ -965,116 +965,145 @@ span{
 }
 
 }
+/* ===========================
+   MOBILE RESPONSIVE
+=========================== */
 
-/* ==========================
-      MOBILE RESPONSIVE
-========================== */
-
-@media(max-width:768px){
+@media (max-width:768px){
 
 nav{
-
-    padding:15px 20px;
-
-    height:auto;
-
+    padding:15px;
     flex-direction:column;
-
+    height:auto;
+    gap:15px;
 }
 
 nav h1{
-
-    margin-bottom:15px;
-
+    font-size:28px;
 }
 
 .navebar{
-
-    flex-wrap:wrap;
-
+    width:100%;
+    display:flex;
     justify-content:center;
-
-    gap:18px;
-
+    flex-wrap:wrap;
+    gap:15px;
 }
 
 .navebar a{
-
+    margin:0;
     font-size:15px;
-
 }
 
 .container{
-
+    flex-direction:column-reverse;
+    text-align:center;
     padding:40px 20px;
-
 }
 
-.left h3{
-
-    font-size:34px;
-
+.left,
+.right{
+    width:100%;
 }
 
-.left h5{
-
-    font-size:24px;
-
+.container img{
+    width:220px;
+    height:220px;
+    margin-bottom:30px;
 }
 
-span{
+h3,
+h5,
+.intro-text{
+    padding-left:0;
+    text-align:center;
+}
 
-    font-size:inherit;
+h3{
+    font-size:38px;
+}
 
+h5{
+    font-size:28px;
 }
 
 .intro-text{
-
-    font-size:16px;
-
+    max-width:100%;
 }
 
-.right img{
-
-    width:240px;
-
-    height:240px;
-
+.social-links{
+    justify-content:center;
+    padding-left:0;
 }
 
-.profile-photo{
+.project-section{
+    padding:30px 20px;
+}
 
-    width:240px;
+.project-frame{
+    flex-direction:column;
+    text-align:center;
+}
 
-    height:240px;
+.project-image img{
+    width:100%;
+}
 
+.project-info{
+    margin-top:0;
 }
 
 .project-info h3{
-
-    font-size:28px;
-
+    padding-left:0;
 }
 
-.project-info p{
-
-    font-size:16px;
-
+#skills{
+    padding:40px 20px;
 }
 
-.project-section h2,
-#skills h2,
-.about-header h2,
-.contact-section h2{
+.skills-grid{
+    grid-template-columns:repeat(2,1fr);
+}
 
-    font-size:35px;
+.about-inner{
+    flex-direction:column-reverse;
+    align-items:center;
+}
 
+.about-left{
+    max-width:100%;
+    text-align:center;
+}
+
+.about-left h3{
+    padding-left:0;
+}
+
+.about-right{
+    margin-top:0;
+}
+
+.profile-photo{
+    width:220px;
+    height:220px;
 }
 
 .contact-card{
-
     padding:20px;
+}
 
+.contact-form{
+    grid-template-columns:1fr;
+}
+
+h2{
+    padding-left:0;
+    text-align:center;
+    font-size:38px;
+}
+
+.footer{
+    font-size:14px;
 }
 
 }
@@ -1082,7 +1111,7 @@ span{
 /* ==========================
       SMALL MOBILE
 ========================== */
-
+/* 
 @media(max-width:480px){
 
 .navebar{
@@ -1143,4 +1172,4 @@ span{
 
 }
 
-}
+} */
